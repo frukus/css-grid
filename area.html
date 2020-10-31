@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css grid <area shape="" coords="" href="" alt=""></title>
+</head>
+<body>
+  <contenedor>
+    <header> Header</header>
+    <aside>Izquierda</aside>
+    <contenido>Content</contenido>
+    <aside>Derecha</aside>
+    <footer>Footer</footer>
+  </contenedor>
+</body>
+<style>
+
+  contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "header"
+      "contenido"
+      "izquierda"
+      "derecha"
+      "footer";
+    background-color: goldenrod;
+  }
+</style>
+</html>
